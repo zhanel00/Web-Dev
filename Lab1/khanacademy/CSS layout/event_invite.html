@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <style>
+            #invited-event {
+                width:300px;
+                border:3px dotted rgb(37, 49, 219);
+                margin:auto;
+                text-align:center;
+                color:rgb(19, 71, 156);
+            }
+            #details {
+                font-family:cursive;
+                font-style:italic;
+                line-height:2;
+                width:200px;
+                margin:auto;
+                padding:20px;
+            }
+            #list-heading {
+                text-align:center;
+                font-size:20px;
+            }
+            #rsvp {
+                padding:10px;
+                margin:auto;
+                width:200px;
+                text-align:center;
+                line-height:1.5;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="invited-event">
+            <h1>You're invited!</h1>
+            <h2>To Digital Almaty!</h2>
+        </div>
+        
+    <div id="details">
+        <p id="list-heading"><strong>The details:</strong></p>
+            <ul>
+                <li>
+                    30+ countries
+                </li>
+                <li> 
+                    150+ speakers
+                </li>
+                <li> 
+                    20+ panel sessions
+                </li>
+            </ul>
+    </div>
+
+<div id="rsvp">
+    <fieldset>
+        <label for="yes-no">Will you come? <br> </label>
+        <select name="yes-no">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <input type="submit" value="Submit">
+    </fieldset>
+</div>
+</body>
+</html>
