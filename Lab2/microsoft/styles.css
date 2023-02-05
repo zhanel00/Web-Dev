@@ -1,0 +1,239 @@
+html {
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    max-width: 1960px;
+    margin: auto;
+    font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.header span {
+    margin-top: 5px;
+}
+
+.header-logo {
+    min-width: 137px;
+    padding: 14px 6px 16px 10px;
+}
+
+.header-links {
+    min-width: 57%;
+    align-items: start;
+    padding: 18px 8px 10px;
+}
+
+.header-links a {
+    color: #262626;
+    font-weight: 400;
+    padding: 16px 8px 5px;
+    margin-top: 1px;
+}
+
+.header-products {
+    padding: 18px 20px 16px 20px;
+    font-size: inherit;
+}
+
+.header button {
+    font-size: inherit;
+    font-family: inherit;
+    background: transparent;
+    padding-bottom: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.header span:hover {
+    padding-bottom: 3px;
+    border-bottom: 2px solid black;
+}
+
+.search-button {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.search-button button {
+    display: flex;
+    text-align: center;
+}
+
+.login-button {
+    display: flex;
+    text-align: center;
+}
+
+.login-button button {
+    display: flex;
+    max-height: 30px; 
+    align-items: center;
+    text-align: center;
+}
+
+.login-button img {
+    margin-left: 8px;
+}
+
+.main {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.microsoft-365 {
+    display: flex;
+    min-width: 100%;
+}
+
+.microsoft-365-background {
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-M365-Icon-Bounce-Word-Merch:VP5-1920x600);
+    background-repeat: no-repeat;
+    width: 1080px;
+    height: 460px;
+    background-position: 0px 0;
+    background-size:cover;
+}
+
+.microsoft-365-links {
+    margin-left: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* max-width: 300px; */
+    width: 40%;
+    height: 40%;
+}
+
+.microsoft-365-links h2 {
+    font-size: 36px;
+    font-family: inherit;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.microsoft-365-content {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.microsoft-365-content button {
+    margin-top: 18px;
+}
+
+.search-button {
+    padding-top: 17px;
+}
+
+.login-button {
+    margin-left: 5px;
+}
+
+.login-button button {
+    padding: 0;
+    margin: 8px;
+    margin-top: 12px;    
+}
+
+.block-products {
+    width: 90%;
+    display: flex;
+    
+}
+
+.block-products-container {
+    display: flex;
+    max-width: 100%;
+    flex-basis: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 110px;
+}
+
+.block-products-container a {
+    flex-shrink: 2;
+    flex-basis: 100%;
+    max-width: 21.5%;
+}
+
+.block {
+    max-width: 21%;
+    display:flex;
+    color: inherit;
+    flex-direction: column;
+    padding: 0px 13px;
+}
+
+.block h2 {
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 1.2;
+}
+
+.block p {
+    margin-top: 0;
+}
+
+.block-link {
+    margin-top: 10px;
+    color: #0067B8;
+    font-weight: 600;
+}
+
+.block-link:hover {
+    border-bottom: 1px solid;
+}
+
+#for-1-button {
+    color: #fff;
+    background-color: #0067b8;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 2;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    width: 8.7em;
+    height: 2.4em;
+    padding: 0px 8px;
+    padding-bottom: 2px;
+    margin-right: 24px;
+}
+
+.button-text {
+    font-family: inherit;
+    font-size: 90%;
+}
+
+#for-6-button {
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#for-6-button span:hover {
+    border-bottom: 1px solid black;
+}
+
+.blue-arrow {
+    filter: invert(23%) sepia(88%) saturate(1982%) hue-rotate(190deg) brightness(96%) contrast(101%);
+}
