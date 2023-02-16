@@ -42,6 +42,7 @@ h1 {
     padding: 10px;
     margin-right: 10px;
     font-size: 1rem;
+    font-family: inherit;
 }
 .add-button {
     font-family: inherit;
@@ -62,6 +63,7 @@ h1 {
     background-color: #fff;
     padding: 10px;
     font-size: 1.1rem;
+    color: #cb7d7a;
 }
 .item:first-child {
     border-top-left-radius: 7px;
@@ -77,12 +79,12 @@ h1 {
 }
 .delete-button {
     float: right;
-    background-color: #dc143c;
+    background-color: #e59fab;
+    color: white;
     border: none;
     outline: none;
     border-radius: 7px;
-    padding: 2px 5px;
-    padding-top: 3px;
+    padding: 0px 5px;
     margin-left: 10px;
     font-size: 1.1rem;
     font-weight: 550;
