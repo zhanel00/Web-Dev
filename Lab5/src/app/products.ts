@@ -2,7 +2,7 @@ import {Category, categories} from "./categories";
 
 export interface Product {
   category: Category;
-  likes?: number;
+  likes: number;
   id: number;
   name: string;
   price: number;
@@ -43,6 +43,7 @@ export const products = [
     category: categories.filter(category => {
       return category.name === 'Electronics'
     })[0],
+    likes: 0,
     id: 3,
     name: 'Микрофон Union YS-63',
     price: 3_950,
@@ -55,6 +56,7 @@ export const products = [
     category: categories.filter(category => {
       return category.name === 'Furniture'
     })[0],
+    likes: 0,
     id: 4,
     name: 'Табурет Stoly Almaty',
     price: 5_600,
@@ -140,6 +142,32 @@ export const products = [
     rating: 5.0,
     img: './assets/images/gigabyte-geforce-rtx-3060-ti.jpg',
     url: 'https://kaspi.kz/shop/p/gigabyte-geforce-rtx-3060-ti-gv-n306tgaming-oc-8gd-2-0-8gb-102565473'
+  },
+  {
+    category: categories.filter(category => {
+      return category.name === 'Furniture'
+    })[0],
+    likes: 0,
+    id: 11,
+    name: 'Кровать Mod Beds',
+    price: 157_600,
+    description: 'спальное место: 180x200 см ширина, см: 189 длина, см: 209',
+    rating: 5.0,
+    img: './assets/images/krovat-mod-beds.jpeg',
+    url: 'https://kaspi.kz/shop/p/mod-beds-vertikal-18756-180x200-sm-s-matrasom-seryi-106051867'
+  },
+  {
+    category: categories.filter(category => {
+      return category.name === 'Furniture'
+    })[0],
+    likes: 0,
+    id: 12,
+    name: 'BULGYN угловой диван',
+    price: 93_999,
+    description: 'высота, см: 60; ширина, см: 284; глубина, см: 140',
+    rating: 5.0,
+    img: './assets/images/krovat-mod-beds.jpeg',
+    url: 'https://kaspi.kz/shop/p/mod-beds-vertikal-18756-180x200-sm-s-matrasom-seryi-106051867'
   },
 ];
 

@@ -1,4 +1,25 @@
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+.buttons button {
+    margin-right: 5px;
+}
 
+.like {
+    font-size: 25px;
+    border-color: transparent;
+    background-color: transparent;
+    color:rgb(90, 86, 86)
+}
+
+.like:hover {
+    font-size: 25px;
+    border-color: transparent;
+    background-color: transparent;
+    color:rgb(211, 0, 0)
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.

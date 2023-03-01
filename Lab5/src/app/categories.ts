@@ -3,6 +3,7 @@ export interface Category {
 }
 
 export const categories = [
+    {name: 'All'},
     {name: 'Electronics'},
     {name: 'Furniture'},
     {name: 'Beauty products'},

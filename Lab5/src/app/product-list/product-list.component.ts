@@ -10,10 +10,10 @@ import { Product, products } from '../products';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  selectedCategory : Category | undefined;
   products = products;
   categories = categories;
-  filteredProducts : Product[] = [];
+  filteredProducts : Product[] = [...products];
+  selectedCategory : Category = categories.filter(c => c.name === 'All')[0];
   constructor(private router: Router) { }
 
   share(url: string) {
@@ -22,13 +22,29 @@ export class ProductListComponent {
     window.location.href = 'https://t.me/share/url?url='+url;
   }
 
+  deleteItem(id : number) {
+    this.products = this.products.filter(p => p.id != id)
+    this.filteredProducts = this.filteredProducts.filter(p => p.id != id)
+    this.filterItems()
+  }
+
   setCurrentCategory(category : Category) {
     this.selectedCategory = category;
   }
   filterItems() {
-    this.filteredProducts = products.filter(product => {
-      return product.category === this.selectedCategory;
-    })
+    if (this.selectedCategory === categories.filter(category => {
+      return category.name === 'All'
+    })[0]) {
+      this.filteredProducts = this.products;
+    } else {
+      this.filteredProducts = this.products.filter(product => {
+        return product.category === this.selectedCategory;
+      })
+    }
+  }
+
+  addLikes(id : number) {
+    products.filter(p => p.id === id).map(p => p.likes += 1)
   }
 
   onNotify() {

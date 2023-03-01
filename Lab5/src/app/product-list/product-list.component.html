@@ -2,7 +2,7 @@
 
 <div>
   <select [(ngModel)]="selectedCategory" (change)="filterItems()">
-    <option *ngFor="let category of categories" [ngValue]="category">
+    <option *ngFor="let category of categories" [ngValue]="category" [selected]="category.name == 'All'">
       {{category.name}}
     </option>
   </select>
@@ -24,10 +24,23 @@
     Rating: {{product.rating}}
   </p>
 
-  <button type="button" (click)="share(product.url)">
-    Share
-  </button>
+    <p>
+        Likes: {{product.likes}}
+    </p>
 
+  <div class="buttons">
+      <button type="button" (click)="share(product.url)">
+        Share
+      </button>
+
+      <button type="button" class="like" (click)="addLikes(product.id)">
+          ♥️
+      </button>
+
+      <button type="button" (click)="deleteItem(product.id)">
+        Delete
+      </button>
+  </div>
   <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts>
 </div>
 <!-- 
