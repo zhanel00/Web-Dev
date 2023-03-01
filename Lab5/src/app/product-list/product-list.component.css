@@ -1,7 +1,7 @@
 .buttons {
     display: flex;
     flex-direction: row;
-    margin: 5px;
+    margin: 0px;
 }
 .buttons button {
     margin-right: 5px;
@@ -9,6 +9,7 @@
 
 .like {
     font-size: 25px;
+    padding: 0px 16px;
     border-color: transparent;
     background-color: transparent;
     color:rgb(90, 86, 86)

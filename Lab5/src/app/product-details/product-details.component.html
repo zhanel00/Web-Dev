@@ -2,8 +2,9 @@
 
 <div *ngIf="product">
   <h3>{{ product.name }}</h3>
+  <img src="{{product.img}}" height="200px">
   <h4>{{ product.price | currency:'₸ ' }}</h4>
   <p>{{ product.description }}</p>
-  <p>{{ product.rating }}</p>
+  <p>Rating: {{ product.rating }}</p>
   <button type="button" (click)="addToCart(product)">Buy</button>
 </div>
