@@ -1,0 +1,31 @@
+body {
+  background-color: #cccccc;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 5px;
+}
+
+li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+li button {
+  color: white;
+  background-color: #e59fab;
+}
+
+li button:hover {
+  cursor: pointer;
+  background-color: rgba(229, 159, 171, 0.44);
+}
+
+.header-nav {
+  margin-bottom: 50px;
+}

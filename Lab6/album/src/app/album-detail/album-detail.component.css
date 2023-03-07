@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+  width: 500px;
+  color: #592b25;
+}
+
+.action-fields {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action-fields button {
+  height: 50%;
+  margin-left: 20px;
+  color: white;
+  background-color: #79a464;
+}
+
+.action-fields button:hover {
+  cursor: pointer;
+  background-color: rgba(121, 164, 100, 0.63);
+}
+
+fieldset {
+  display: flex;
+  justify-content: center;
+  border: none;
+  width: inherit;
+  margin: auto;
+  padding: 0;
+}
+
+#photos-link {
+  font-size: 1.5em;
+  text-decoration: none;
+}

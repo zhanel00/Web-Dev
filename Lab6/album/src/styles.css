@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background: linear-gradient(to right, #e5c4ae, #cb7d7a);
+  font-family: Andalé Mono, monospace;
+}
+
+button {
+  font-size: inherit;
+  font-family: inherit;
+  border: 1px solid white;
+  border-radius: 3px;
+}
