@@ -26,6 +26,10 @@ export class AlbumService {
     return this.client.delete<Album>(`https://jsonplaceholder.typicode.com/albums/${id}`);
   }
 
+  createAlbum(album: Album): Observable<Album> {
+    return this.client.post<Album>(`https://jsonplaceholder.typicode.com/albums`, album)
+  }
+
   getPhotos(id: number): Observable<Photo[]> {
     return this.client.get<Photo[]>(`https://jsonplaceholder.typicode.com/albums/${id}/photos`)
   }

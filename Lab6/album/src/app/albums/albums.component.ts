@@ -11,9 +11,11 @@ import { ActivatedRoute } from "@angular/router";
 export class AlbumsComponent implements OnInit {
   albums: Album[];
   loaded: boolean;
+  newAlbum: Album;
   constructor(private albumService: AlbumService) {
     this.albums = [];
     this.loaded = true;
+    this.newAlbum = {} as Album;
   }
 
   getAlbums() {
@@ -25,9 +27,18 @@ export class AlbumsComponent implements OnInit {
   }
 
   deleteAlbum(id : number) {
-    this.albumService.deleteAlbum(id).subscribe((response => {
+    this.albumService.deleteAlbum(id).subscribe((response) => {
       this.albums = this.albums.filter(a => a.id != id);
-    }))
+    })
+  }
+
+  createAlbum() {
+    this.loaded = false;
+    this.albumService.createAlbum(this.newAlbum).subscribe((album) => {
+      this.albums.push(album);
+      this.loaded = true;
+      this.newAlbum = {} as Album;
+    });
   }
 
   ngOnInit(): void {

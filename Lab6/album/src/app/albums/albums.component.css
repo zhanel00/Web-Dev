@@ -30,3 +30,30 @@ li button:hover {
   cursor: pointer;
   background-color: #7b3d32;
 }
+
+fieldset {
+  display: flex;
+  justify-content: center;
+  border: none;
+  width: inherit;
+  margin: auto;
+  padding: 0;
+}
+
+.action-fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-fields button {
+  height: 50%;
+  margin-left: 20px;
+  color: white;
+  background-color: #79a464;
+}
+
+.action-fields button:hover {
+  cursor: pointer;
+  background-color: rgba(121, 164, 100, 0.63);
+}
