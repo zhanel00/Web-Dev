@@ -8,6 +8,7 @@ class Category(models.Model):
 
     def to_json(self):
         return {
+            "id" : self.id,
             "name" : self.name
         }
 
@@ -23,9 +24,10 @@ class Product(models.Model):
 
     def to_json(self):
         return {
+            "id": self.id,
             "name" : self.name,
             "price" : self.price,
             "description" : self.description,
             "count" : self.count,
-            "category" : self.category
+            "category" : self.category.to_json()
         }
