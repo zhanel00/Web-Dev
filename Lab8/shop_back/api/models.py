@@ -3,7 +3,7 @@ from django.db import models
 class Category(models.Model):
     name = models.CharField(max_length=255)
 
-    def str(self):
+    def __str__(self):
         return self.name
 
     def to_json(self):
@@ -18,7 +18,7 @@ class Product(models.Model):
     count = models.IntegerField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
 
-    def str(self):
+    def __str__(self):
         return self.name
 
     def to_json(self):
