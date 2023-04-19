@@ -1,0 +1,13 @@
+<fieldset class="action-fields">
+  <input type="text" [(ngModel)]="newCompany.name" placeholder="Name of a new Company">
+  <button (click)="createCompany()">Add company</button>
+</fieldset>
+
+<ul>
+  <li *ngFor="let company of companies">
+    <a [routerLink]="['/companies', company.id, 'vacancies']">
+      {{company.id}}) {{company.name}}
+    </a>
+    <button (click)="deleteCompany(company.id)">Delete</button>
+  </li>
+</ul>

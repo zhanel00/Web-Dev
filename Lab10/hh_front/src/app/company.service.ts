@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import { Company } from './models';
+import {Company, Vacancy} from './models';
 import { Observable } from "rxjs";
 
 @Injectable({
@@ -8,7 +8,7 @@ import { Observable } from "rxjs";
 })
 export class CompanyService {
 
-  baseUrl = 'https://localhost:8000/companies';
+  baseUrl = 'http://127.0.0.1:8000/api/companies';
 
   constructor(private client: HttpClient) { }
 
@@ -18,6 +18,18 @@ export class CompanyService {
 
   getCompany(id: number): Observable<Company> {
     return this.client.get<Company>(this.baseUrl + `/${id}`)
+  }
+
+  deleteCompany(id: number): Observable<Company> {
+    return this.client.delete<Company>(this.baseUrl + `/${id}`)
+  }
+
+  createCompany(company: Company): Observable<Company> {
+    return this.client.post<Company>(this.baseUrl, company)
+  }
+
+  getVacanciesByCompany(id: number): Observable<Vacancy[]> {
+    return this.client.get<Vacancy[]>(this.baseUrl + `/${id}` + '/vacancies')
   }
 
 }

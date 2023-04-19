@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Vacancies of Company #{{getCompanyId()}}</h1>
+  <ul>
+    <li *ngFor="let vacancy of vacancies">
+      <a href="{{vacancy.name}}"></a>
+      <p>Name: {{vacancy.name}}</p>
+      <p>Company: {{vacancy.company}}</p>
+      <p>Description: {{vacancy.description}}</p>
+      <p>Salary: {{vacancy.salary}}</p>
+    </li>
+  </ul>
+</div>
